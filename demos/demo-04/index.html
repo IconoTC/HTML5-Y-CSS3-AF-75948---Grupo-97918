@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="En esta demo se presentan los metadatos más comunes en HTML, explicando su función y cómo contribuyen a la accesibilidad, SEO y experiencia del usuario.">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="index, follow">
+
+  <meta name="author" content="Alejandro Cerezo">
+  <meta name="generator" content="Visual Studio Code">
+  <meta name="updated" content="2026-01-28">
+  <meta name="license" content="MIT">
+  <meta name="language" content="es">
+
+  <meta property="og:title" content="Primer ejercicio del curso de HTML">
+  <meta property="og:description" content="Primer ejercicio del curso de HTML">
+  <meta property="og:image" content="https://alce65.github.io/web.sample.2024/assets/world.logo.png">
+  <meta property="og:url" content="https://alce65.github.io/web.sample.2024/">
+
+  <title>HTML en la web</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: Montserrat, Arial, sans-serif;
+      line-height: 1.6;
+      margin: 3rem;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Metadatos en HTML</h1>
+  <p>Los metadatos son información adicional sobre el documento que no se muestra directamente en la página web, pero
+    que es importante para los navegadores, motores de búsqueda y otros servicios.</p>
+  <p>Los metadatos son esenciales para mejorar la accesibilidad, el SEO y la experiencia del usuario. Proporcionan
+    información crucial para los navegadores y motores de búsqueda, ayudando a indexar y mostrar correctamente la página
+    web.</p>
+  <h2>Elementos de metadatos comunes</h2>
+  <ul>
+    <li><strong>meta charset</strong>: Define la codificación de caracteres del documento (por ejemplo, UTF-8).</li>
+    <li><strong>meta name="viewport"</strong>: Controla cómo se muestra la página en dispositivos móviles para un diseño
+      responsive.</li>
+    <li><strong>meta name="description"</strong>: Proporciona una descripción breve del contenido de la página,
+      utilizada por motores de búsqueda.</li>
+    <li><strong>meta name="keywords"</strong>: Lista de palabras clave relacionadas con el contenido de la página
+      (aunque su uso ha disminuido en SEO).</li>
+    <li><strong>meta name="author"</strong>: Indica el autor del documento.</li>
+    <li><strong>meta name="generator"</strong>: Especifica la herramienta utilizada para generar el documento.</li>
+    <li><strong>meta name="robots"</strong>: Indica a los motores de búsqueda cómo indexar la página (por ejemplo,
+      "index, follow").</li>
+    <li><strong>meta name="updated"</strong>: Indica la fecha de la última actualización del documento.</li>
+    <li><strong>meta name="license"</strong>: Proporciona información sobre la licencia bajo la cual se distribuye el
+      contenido de la página.</li>
+    <li><strong>meta name="color-scheme"</strong>: Indica los esquemas de color que la página soporta (por ejemplo,
+      "light dark").</li>
+    <li><strong>meta name="language"</strong>: Especifica el idioma principal del contenido de la página (por ejemplo,
+      "es").</li>
+  </ul>
+  <h2>Otros elementos habituales en el head</h2>
+  <ul>
+    <li><strong>title</strong>: Define el título de la página que se muestra en la pestaña del navegador.</li>
+    <li><strong>link</strong>: Se utiliza para enlazar recursos externos como hojas de estilo CSS o favicons.</li>
+    <li><strong>style</strong>: Permite incluir estilos CSS directamente en el documento.</li>
+    <li><strong>script</strong>: Permite incluir código JavaScript directamente en el documento o enlazar a archivos
+      externos.</li>
+  </ul>
+  <h2>Metadatos no incluidos en el estándar HTML</h2>
+  <p>Además de los metadatos estándar, también existen otros tipos de metadatos que pueden ser utilizados en documentos
+    HTML, aunque no forman parte del estándar oficial. Algunos ejemplos incluyen:</p>
+  <ul>
+    <li><strong>Open Graph</strong>: Utilizado para mejorar la apariencia de los enlaces compartidos en redes sociales,
+      proporcionando información como título, descripción e imagen.</li>
+    <li><strong>Twitter Cards</strong>: Similar a Open Graph, pero específico para Twitter, permitiendo mostrar
+      contenido enriquecido en los tweets que enlazan a la página.</li>
+    <li><strong>JSON-LD</strong>: Un formato de metadatos estructurados que se puede incluir en el head para
+      proporcionar información adicional a los motores de búsqueda, como datos de productos, eventos o personas.</li>
+  </ul>
+  
+  <h3>Open Graph</h3>
+  <p>Open Graph es un protocolo que permite a los desarrolladores web controlar cómo se muestra su contenido cuando se
+    comparte en redes sociales. Al incluir metadatos Open Graph en el head del documento, se puede especificar el
+    título, la descripción, la imagen y otros detalles que aparecerán en la vista previa del enlace compartido.</p>
+  <p>Ejemplo de metadatos Open Graph:</p>
+  <pre>
+    &lt;meta property="og:title" content="Título de la página" /&gt;
+    &lt;meta property="og:description" content="Descripción de la página" /&gt;
+    &lt;meta property="og:image" content="https://example.com/imagen.jpg" /&gt;
+    &lt;meta property="og:url" content="https://example.com/pagina" /&gt;
+  </pre>
+
+  <h3>Twitter Cards</h3>
+  <p>Twitter Cards son metadatos que permiten a los desarrolladores web controlar cómo se muestra su contenido cuando se
+    comparte en Twitter. Al incluir metadatos Twitter Cards en el head del documento, se puede especificar el título, la
+    descripción, la imagen y otros detalles que aparecerán en la vista previa del tweet compartido.</p>
+  <p>Ejemplo de metadatos Twitter Cards:</p>
+  <pre>
+    &lt;meta name="twitter:card" content="summary" /&gt;
+    &lt;meta name="twitter:title" content="Título de la página" /&gt;
+    &lt;meta name="twitter:description" content="Descripción de la página" /&gt;
+    &lt;meta name="twitter:image" content="https://example.com/imagen.jpg" /&gt;
+  </pre>
+
+  <h3>JSON-LD</h3>
+  <p>JSON-LD (JavaScript Object Notation for Linked Data) es un formato de metadatos estructurados que se puede incluir
+    en el head del documento para proporcionar información adicional a los motores de búsqueda. JSON-LD se utiliza
+    comúnmente para describir datos como productos, eventos, personas y organizaciones, lo que ayuda a los motores de
+    búsqueda a entender mejor el contenido de la página y a mostrar resultados enriquecidos en las búsquedas.</p>
+  <p>Ejemplo de metadatos JSON-LD:</p>
+  <pre>
+    &lt;script type="application/ld+json"&gt;
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Nombre del producto",
+      "description": "Descripción del producto",
+      "image": "https://example.com/imagen.jpg",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "19.99",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    &lt;/script&gt;
+  </pre>
+</body>
+
+</html>
