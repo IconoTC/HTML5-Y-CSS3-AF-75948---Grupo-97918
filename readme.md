@@ -38,3 +38,45 @@ Horario: 9:00 - 14:00
     - Organización de tablas. 
     - Definición de la estructura de una página HTML5. 
     - Transformaciones, transiciones y animaciones.
+
+## Desarrollo
+
+### Dia 1 (Lunes 01/06/2026)
+
+- Presentación formador y alumnos. Curso
+- Requisitos técnicos
+  - Navegador web actualizado (Google Chrome, ...)
+  - Editor de código (Visual Studio Code, ...)
+  - Repositorio GitHub
+    - Documentación
+    - Recursos y tools
+- Introducción a HTML
+  - Arquitectura de aplicaciones Web
+  - El lenguaje HTML (demo-01)
+    - Etiquetas y atributos
+    - Hipertexto: links HTML
+    - Imágenes
+    - Comentarios
+
+[descanso]
+
+- Validación y estructura de un documento HTML (demo-02)
+  - Elementos imprescindibles y recomendables
+  - Documentos HTML5_ html, head, body
+  - Etiquetas más usadas: p, h1-h6, a, img, div, span
+
+- HTML en la Web (demo-03)
+  - Interacción con CSS
+  - Interacción con JavaScript
+
+- Elementos del head (demo-04)
+  - Metadatos
+  - Título de la página
+  - Enlaces a recursos externos: favicon, CSS, JavaScript, fuentes, ... 
+  - Metadatos para SEO y redes sociales
+
+- Revisión del estándar HTML. Clasificación de etiquetas. 
+
+### Dia 2 (Martes 02/06/2026)
+
+- Etiquetas principales de HTML (demo-05)
