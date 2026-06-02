@@ -79,4 +79,56 @@ Horario: 9:00 - 14:00
 
 ### Dia 2 (Martes 02/06/2026)
 
-- Etiquetas principales de HTML (demo-05)
+- Etiquetas principales de HTML (demo-05): Porfolio
+
+- Semántica en HTML5 y roles Aria
+- Sectioning:
+-   - `<header>`: Encabezado de una sección o página.
+    - `<footer>`: Pie de página o sección.
+    - `<main>`: Contenido principal de la página (etiqueta de grouping).
+    - headings: `<h1>` a `<h6>`: Títulos y subtítulos de secciones.
+    - `<hgroup>`: Agrupación de encabezados y párrafos relacionados.
+    - `<nav>`: Contenedor de enlaces de navegación.
+    - `<section>`: Agrupación temática de contenido.
+    - `<article>`: Contenido independiente y autocontenible.
+    - `<address>`: Información de contacto del autor o propietario de la página.
+
+ - roles aria y aria-label
+- header y footer en secciones y artículos
+- uso de clases y css para cambiar la estética de los elementos semánticos (e.g. headings)
+- validación de la estructura
+
+Otras etiquetas:
+  - grouping
+    - listas: `<ul>`, `<ol>`, `<li>`
+    - párrafos: `<p>`
+    - `<div>`: Contenedor genérico sin significado semántico específico (etiqueta de grouping).
+- enlaces (anchor): `<a>`: enlaces externos o internos a la página
+
+[descanso]
+
+- Otras etiquetas de sectioning y grouping
+  - `<aside>`: Contenido relacionado pero separado del contenido principal.
+  - `<menu>` 
+  - `<dl>`, `<dt>` and `<dd>`
+  - `<hr>` 
+  - `<pre>` 
+  - `<blockquote>`
+
+- Embedding content:
+  - `<img>`: Incrustación de imágenes en la página.
+  - `<figure>` and `<figcaption>` 
+  - `<iframe>`: Incrustación de otra página web dentro de la actual.
+  - `<iframe>`: Videos de YouTube.
+  - `<video>`: Reproducción de video.
+  - `<audio>`: Reproducción de audio.
+
+- Nueva página 'contactos': enlaces entre páginas
+- Formularios:
+  - `<form>`: Contenedor para elementos de formulario.
+  - `<input>`: Campos de entrada de datos.
+  - `<textarea>`: Área de texto multi-linear.
+  - `<select>`: Menú desplegable.
+  - `<button>`: Botón interactivo.
+  - `<label>`: Etiqueta para elementos de formulario.
+
