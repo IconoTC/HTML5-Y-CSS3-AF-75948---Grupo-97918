@@ -9,17 +9,197 @@
   <meta name="keywords" content="HTML, CSS, JavaScript">
   <meta name="color-scheme" content="light dark">
 
-  <title>HTML en la web</title>
+  <title>Demo HTML: Porfolio</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <style>
+    :root {
+      --medium-size: 1.2rem;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 2rem;
+    }
+
+    .h4 {
+      font-size: var(--medium-size);
+      margin-top: 1.5rem;
+    }
+
+    aside {
+      background-color: #f0f0f0;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    pre {
+      border-top: 1px solid #d73030;
+      padding-top: 1rem;
+    }
+  </style>
+
 </head>
 
 <body>
-  <h1>Etiquetas HTML</h1>
+  <header role="banner">
+    <hgroup>
+      <h1>Porfolio de Pepe Pérez</h1>
+      <p class="h4">Desarrollador Web</p>
+    </hgroup>
+    <nav role="navigation">
+      <menu>
+        <li><a href="#personal-info">Información personal</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </menu>
+    </nav>
+  </header>
+  <main role="main">
+    <section id="personal-info" aria-label="Información personal" role="region">
+      <h2>Información personal</h2>
+      <p>Hola, soy Pepe Pérez, un desarrollador web con experiencia en <strong>HTML</strong>, <strong>CSS</strong> y <strong>JavaScript</strong>. Me apasiona crear sitios
+        web accesibles y optimizados para SEO.</p>
+      <section>
+        <h3 class="h4">Habilidades</h3>
+        <ul>
+          <li>HTM</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>SEO</li>
+          <li>Accesibilidad web</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="projects" aria-label="Proyectos" role="region">
+      <header>
+        <h2>Proyectos</h2>
+        <nav aria-label="Navegación de proyectos" role="navigation">
+          <ul>
+            <li><a href="#proyecto-a">Proyecto A</a></li>
+            <li><a href="#proyecto-b">Proyecto B</a></li>
+            <li><a href="#proyecto-c">Proyecto C</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <article role="article" id="proyecto-a">
+        <h3>Proyecto A</h3>
+        <p><em>Mi primer proyecto</em>: Un sitio web de <strong>comercio electrónico</strong> con una interfaz de usuario intuitiva.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut ab accusamus totam, possimus voluptates ullam
+          nam corrupti ratione tenetur cumque necessitatibus vero nihil porro nulla dolores sapiente, provident alias
+          blanditiis.</p>
+        <p>Hic cum quia voluptate aperiam voluptatibus maxime animi veritatis! Cum nostrum eligendi minus alias eveniet
+          ipsam totam ad iste a. Recusandae assumenda libero modi similique obcaecati dolore nisi perferendis eum.</p>
+        <p>Tempora perferendis iure laboriosam vel minus quibusdam tenetur asperiores voluptatum exercitationem?
+          Corporis veritatis sint, deleniti recusandae eligendi, at assumenda blanditiis fugit natus et molestiae
+          architecto nesciunt quos perferendis ad tenetur.</p>
+
+        <p>
+          Este proyecto utiliza JavaScript para realizar cálculos simples.
+        </p>
+        <dl>
+          <dt>Lenguaje</dt>
+          <dd>JavaScript</dd>
+          <dt>Funcionalidad</dt>
+          <dd>Cálculos matemáticos</dd>
+        </dl>
+        <pre>
+          const x = 10;
+          const y = 20;
+          console.log(x * y);
+        </pre>
+        <footer>
+          <address>Pepe Pérez - <a href="mailto:pepe.perez@example.com">pepe.perez@example.com</a></address>
+          <p>Publicado el 15 de marzo de 2026</p>
+        </footer>
+      </article>
+
+      <hr>
+
+      <article role="article" id="proyecto-b">
+        <h3>Proyecto B</h3>
+        <p>Una aplicación web para la gestión de tareas con funcionalidades avanzadas hecha en Angular.</p>
+
+        <blockquote cite="https://angular.dev/" lang="en">
+          The framework for building scalable web apps with confidence<br>
+          <cite>https://angular.dev/</cite>
+        </blockquote>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vitae facere cum veritatis quis possimus
+          voluptate, ut, id quo debitis, natus fuga eum animi fugit est quidem earum soluta totam!</p>
+        <p>Expedita praesentium ex harum. Doloremque laudantium ut, minima at tempora cum dolor quibusdam, dignissimos
+          animi reprehenderit ducimus ea. Quia repellat tempora in quae delectus illum sit, molestiae doloremque
+          repudiandae corrupti?</p>
+        <footer>
+          <address>Luis López - <a href="mailto:luis.lopez@example.com">luis.lopez@example.com</a></address>
+          <p>Publicado el 30 de abril de 2026</p>
+      </article>
+
+      <hr>
+
+      <article role="article" id="proyecto-c">
+        <h3>Proyecto C</h3>
+        <p>Un blog personal optimizado para SEO con contenido relevante y actualizado.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quod minus atque modi consequuntur odio
+          voluptatibus assumenda a nostrum. Ad quam pariatur a, tempore commodi reprehenderit eveniet suscipit sint hic.
+        </p>
+        <p>Veniam repellat temporibus aliquid incidunt necessitatibus nulla eos iure dicta perspiciatis, inventore
+          reprehenderit. Voluptatum molestias, consectetur ullam, deserunt mollitia totam ipsam tempore cum nesciunt
+          fugiat officiis, ratione fugit dolor nemo?</p>
+        <p>Doloribus, quasi nam aliquid corrupti cupiditate natus quam voluptatibus expedita tempore tenetur
+          perspiciatis commodi aliquam accusamus sit veniam a vitae ipsa libero odio quo corporis veritatis dignissimos.
+          Quaerat, debitis voluptas?</p>
+        <p>Ipsam, dolor! Asperiores, in? Vitae, dignissimos, quasi eligendi pariatur adipisci deleniti quam dolores
+          excepturi, repellendus quaerat sed aspernatur cum. Possimus, fuga numquam aspernatur similique cupiditate
+          eaque facere neque amet deserunt?</p>
+        <footer>
+          <address>Ana García - <a href="mailto:ana.garcia@example.com">ana.garcia@example.com</a></address>
+          <p>Publicado el 15 de enero de 2026</p>
+        </footer>
+      </article>
+
+    </section>
+
+    <section id="contact" aria-label="Contacto" role="region">
+      <h2>Contacto</h2>
+      <p>Puedes contactarme a través de mi correo electrónico: <a
+          href="mailto:pepe.perez@example.com">pepe.perez@example.com</a></p>
+    </section>
+
+    <aside>
+      <h2>Historia de la Web</h2>
+      <p>La World Wide Web fue inventada por Tim Berners-Lee en 1989. Desde entonces, ha evolucionado enormemente,
+        pasando de ser un simple sistema de documentos interconectados a una plataforma global para la comunicación, el
+        comercio y el entretenimiento.</p>
+    </aside>
+
+
+  </main>
+  <footer role="contentinfo">
+    <p>© 2026 HTML en la web. <small>Todos los derechos reservados</small>.</p>
+    <ul>
+      <li><a href="https://twitter.com/pepeperez" target="_blank">Twitter</a></li>
+      <li><a href="https://linkedin.com/in/pepeperez" target="_blank">LinkedIn</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    // JavaScript para mejorar la navegación
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
 </body>
 
 </html>
