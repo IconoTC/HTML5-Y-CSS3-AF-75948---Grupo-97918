@@ -53,9 +53,9 @@
     </hgroup>
     <nav role="navigation">
       <menu>
-        <li><a href="#personal-info">Información personal</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#contact">Contacto</a></li>
+        <li><a class="internal" href="#personal-info">Información personal</a></li>
+        <li><a class="internal" href="#projects">Proyectos</a></li>
+        <li><a href="./forms.html">Contacto</a></li>
       </menu>
     </nav>
   </header>
@@ -64,7 +64,8 @@
       <h2>Información personal</h2>
       <p>Hola, soy Pepe Pérez, un desarrollador web con experiencia en <strong>HTML</strong>, <strong>CSS</strong> y
         <strong>JavaScript</strong>. Me apasiona crear sitios
-        web accesibles y optimizados para SEO.</p>
+        web accesibles y optimizados para SEO.
+      </p>
       <img src="./assets/web-612x612.jpg" alt="Imagen representativa de los datos en Internet" width="600" height="400">
       <section>
         <h3 class="h4">Habilidades</h3>
@@ -193,12 +194,6 @@
 
     </section>
 
-    <section id="contact" aria-label="Contacto" role="region">
-      <h2>Contacto</h2>
-      <p>Puedes contactarme a través de mi correo electrónico: <a
-          href="mailto:pepe.perez@example.com">pepe.perez@example.com</a></p>
-    </section>
-
     <aside>
       <h2>JSConf en Madrid</h2>
       <p>El evento anual de JavaScript en Madrid, donde expertos y entusiastas se reúnen para compartir conocimiento y
@@ -207,7 +202,6 @@
       <iframe width="700" height="400" src="https://www.jsconf.es/" title="JSConf Madrid 2026" frameborder="0"></iframe>
 
     </aside>
-
 
   </main>
   <footer role="contentinfo">
@@ -220,7 +214,7 @@
 
   <script>
     // JavaScript para mejorar la navegación
-    document.querySelectorAll('nav a').forEach(link => {
+    document.querySelectorAll('nav a.internal').forEach(link => {
       link.addEventListener('click', e => {
         e.preventDefault();
         const targetId = link.getAttribute('href').substring(1);

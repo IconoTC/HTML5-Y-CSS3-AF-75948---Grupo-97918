@@ -15,14 +15,26 @@
 </head>
 
 <body>
-    <h1>Demo de HTML: Formularios</h1>
+    <header role="banner">
+        <h1>Demo de HTML: Contactos</h1>
+        <p class="h4">Desarrollador Web</p>
+        <nav role="navigation">
+            <menu>
+                <li><a href="./index.html#personal-info">Información personal</a></li>
+                <li><a href="./index.html#projects">Proyectos</a></li>
+            </menu>
+        </nav>
+    </header>
     <section id="contact" aria-label="Contacto">
-        <h2>Contacto</h2>
-        <p>¿Quieres contactar conmigo?</p>
-        <form method="post">
-            <label class="form-control">
+        <hgroup>
+            <h2>Contacto</h2>
+            <p>¿Quieres contactar conmigo?</p>
+        </hgroup>
+        <form method="get">
+            <label class="form-control" for="user-name">
                 <span>Nombre:</span>
-                <input type="text" name="user-name" placeholder="Dime tu nombre" required>
+                <input type="text" name="user-name" id="user-name" placeholder="Dime tu nombre" 
+                minlength="2" maxlength="50" required>
             </label>
             <label class="form-control">
                 Teléfono:
@@ -34,7 +46,7 @@
             </label>
             <label class="form-control">
                 Contraseña:
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password" minlength="4" maxlength="8" required>
             </label>
             <label class="form-control">
                 Fecha de nacimiento:
