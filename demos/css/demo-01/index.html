@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS en el HTML</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet" />
+  
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    body {
+      font-family: Montserrat, Arial, sans-serif;
+      line-height: 1.6;
+      margin: 3rem;
+    }
+  
+  </style>
+</head>
+
+<body>
+  <h1>Lenguajes de la Web: HTML, CSS</h1>
+  <p>
+    El lenguaje CSS se emplea para dar estilo a la página, permitiendo
+    controlar aspectos como colores, fuentes, márgenes y disposición de los
+    elementos.
+  </p>
+  <p>
+    En esta demo incluimos ejemplos de las tres formas de usar CSS desde HTML
+  </p>
+  <div>
+    <ul>
+      <li>
+        <p>
+          <strong>CSS Inline:</strong> Se aplica directamente a un elemento HTML mediante el atributo <code>style</code>.
+        </p>
+        <p style="color: blue; font-weight: bold;">
+          Example
+        </p>
+      </li>
+      <li>
+        <strong>CSS Interno:</strong> Se incluye dentro de la sección <code>&lt;head&gt;</code> del HTML utilizando la
+        etiqueta <code>&lt;style&gt;</code>.
+      </li>
+      <li>
+        <strong>CSS Externo:</strong> Se define en un archivo separado (como
+        styles.css) y se vincula al HTML mediante la etiqueta <code>&lt;link&gt;</code>.
+      </li>
+
+    </ul>
+
+  </div>
+</body>
+
+</html>
