@@ -159,3 +159,15 @@ Otras etiquetas:
   - Arquitectura de CSS: selectores, propiedades, valores, reglas, hojas de estilo
 
 [descanso]
+
+- Selectores CSS
+  - Selectores básicos: por etiqueta, clase, id
+  - Selectores de agrupación y descendencia
+  - Alternativa actual: anidamiento (nesting) de selectores
+  - Selectores de atributos
+  - Pseudo-clases y pseudo-elementos
+
+- Especificidad y herencia de estilos
+  - Reglas de especificidad: inline > id > clase > etiqueta
+  - Herencia de estilos: cómo los estilos se propagan a través del árbol DOM
+  - Resolución de conflictos: cómo se aplican los estilos cuando hay múltiples reglas que coinciden
