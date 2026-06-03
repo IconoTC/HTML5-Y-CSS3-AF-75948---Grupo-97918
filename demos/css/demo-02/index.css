@@ -1,0 +1,184 @@
+/* Selectores */
+
+/* Selectores de etiquetas HTML (tags) */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0c0c0c;
+  background-color: rgb(218, 203, 203);
+  margin: 0;
+  padding: 2rem;
+}
+
+h1 {
+  color: purple;
+}
+
+section {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Selectores de id */
+
+#p1 {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Mala práctica, pero temos alternativas */
+
+[id="p1"] {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Selectores de clase */
+
+.highlight {
+  background-color: yellow;
+  padding: 1rem;
+}
+
+.sub-title {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+/* Selectores multiples */
+
+h1,
+.sub-title {
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-block: 0.5rem;
+}
+
+/* Selectores de atributos */
+
+[type],
+textarea {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+[type="email"] {
+  border: 2px solid green;
+}
+
+[target] {
+  color: rgb(70, 70, 51);
+  text-decoration: underline;
+}
+
+/* Selectores combinados*/
+
+/* Descendiente directos (hijos) */
+
+/* nav > ul {
+    list-style: none
+}  */
+
+/* Descendiente */
+
+/* nav li {
+    display: inline-block;
+    margin-right: 1rem;
+} */
+
+/* nav li a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+} */
+
+/* Anidamiento o nesting*/
+
+nav {
+  ul {
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+
+/* Sibling (hermanos) selectors */
+
+header ~ section {
+  border: 2px solid #511010;
+}
+
+/* Sibling (hermanos) adyacentes selectors */
+
+header + section {
+  border-radius: 20px;
+}
+
+/*Pseudo-elementos */
+
+header + section {
+  p::first-letter {
+    font-size: 200%;
+    color: red;
+  }
+}
+
+li::marker {
+  color: green;
+  font-size: 1.5rem;
+}
+
+/* Pseudo-clases */
+
+nav {
+  li:hover {
+    color: red;
+    border-bottom: 2px solid red;
+  }
+}
+
+section {
+  ul {
+    li {
+      padding-bottom: 0.5rem;
+    }
+
+    li {
+        background-color: #c9c9c9;
+    }
+
+    li:nth-child(2n + 1) {
+      background-color: #e1a6a6;
+    }
+
+  }
+}
+
+/* Especificidad 
+
+a -> important
+b -> estilos inline
+1 -> Ids
+2 -> atributos, clases, pseudo-clases
+3 -> elementos Y pseudo-elementos
+
+*/
+
+.error {
+  color: red !important;
+}
