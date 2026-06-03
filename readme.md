@@ -93,7 +93,7 @@ Horario: 9:00 - 14:00
     - `<article>`: Contenido independiente y autocontenible.
     - `<address>`: Información de contacto del autor o propietario de la página.
 
- - roles aria y aria-label
+- roles aria y aria-label
 - header y footer en secciones y artículos
 - uso de clases y css para cambiar la estética de los elementos semánticos (e.g. headings)
 - validación de la estructura
@@ -115,6 +115,12 @@ Otras etiquetas:
   - `<pre>` 
   - `<blockquote>`
 
+- Text formatting:
+  - `<strong>`: Texto importante.
+  - `<em>`: Texto enfatizado.
+  - `<small>`: Texto de menor importancia.
+  - ...
+
 - Embedding content:
   - `<img>`: Incrustación de imágenes en la página.
   - `<figure>` and `<figcaption>` 
@@ -132,3 +138,24 @@ Otras etiquetas:
   - `<button>`: Botón interactivo.
   - `<label>`: Etiqueta para elementos de formulario.
 
+### Dia 3 (Miércoles 03/06/2026)
+
+- Tablas en html
+  - `<table>`: Contenedor para una tabla de datos.
+  - `<tr>`: Fila de la tabla.
+  - `<th>`: Celda de encabezado de la tabla.
+  - `<td>`: Celda de datos de la tabla.
+
+- Elementos interactivos y multimedia
+  - De otros tipos: `<a>`, `<button>` (diferencioias), `<input>` ...     
+  - `<details>`: Contenido adicional que el usuario puede mostrar u ocultar.
+  - `<summary>`: Resumen o título para el contenido de `<details>`.
+  - `<dialog>`: Diálogo modal o ventana emergente.
+  - JS: in-line v. scripts internos o externos
+
+- CSS
+  - Concepto de CSS: proposito,
+  - Inclusión de CSS en HTML: inline, interno, externo 
+  - Arquitectura de CSS: selectores, propiedades, valores, reglas, hojas de estilo
+
+[descanso]
