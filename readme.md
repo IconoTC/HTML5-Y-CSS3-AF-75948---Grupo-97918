@@ -154,7 +154,7 @@ Otras etiquetas:
   - JS: in-line v. scripts internos o externos
 
 - CSS
-  - Concepto de CSS: proposito,
+  - Concepto de CSS: propósito,
   - Inclusión de CSS en HTML: inline, interno, externo 
   - Arquitectura de CSS: selectores, propiedades, valores, reglas, hojas de estilo
 
@@ -171,3 +171,47 @@ Otras etiquetas:
   - Reglas de especificidad: inline > id > clase > etiqueta
   - Herencia de estilos: cómo los estilos se propagan a través del árbol DOM
   - Resolución de conflictos: cómo se aplican los estilos cuando hay múltiples reglas que coinciden
+
+### Dia 4 (Jueves 04/06/2026)
+
+- Pseudo-elementos y Pseudo-clases
+  - Pseudo-elementos: 
+    - `::first-letter`, 
+    - `::first-line`,
+    - `::before`, 
+    - `::after`,
+    - `::marker`,
+  - Pseudo-clases: 
+    - `:target`,
+    - `:hover`, 
+    - `:focus`, 
+    - `:nth-child()`, ...
+
+- Variables y funciones CSS
+  - Variables CSS: `--nombre-variable`
+  - Funciones CSS: `calc()`, `var()`, `rgb()`, ...
+  - Paletas de colores
+  - Escala de tamaños para la tipografía
+  - Guias de estilo (Style Guides)
+  - Hojas de CSS básicas
+
+[descanso] 11:10 - 11:40
+
+- Unidades de medida en CSS
+  - Absolutas: `px`, `cm`, `mm`, `in`, `pt`, `pc`
+  - Relativas: `%`, `em`, `rem`, `vw`, `vh`, `vmin`, `vmax`
+  - Rem vs Em
+  
+- Diseño (Layout) de páginas web con CSS
+  - Box model: contenido, padding, border, margin
+  - Display: block, inline, inline-block, none
+  - Flexbox: diseño flexible para contenedores y elementos hijos
+
+
+### Dia 5 (Viernes 05/06/2026)
+
+<!-- 
+- Diseño (Layout) de páginas web con CSS
+  - Grid: diseño de cuadrícula para organizar elementos en filas y columnas 
+  - Position: static, relative, absolute, fixed
+-->
