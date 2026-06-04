@@ -155,7 +155,8 @@ nav {
 section {
   ul {
     li {
-      padding-bottom: 0.5rem;
+      /* padding-bottom: 0.5rem; */
+      line-height: 1.7rem;
     }
 
     li {
