@@ -174,7 +174,7 @@ Otras etiquetas:
 
 ### Dia 4 (Jueves 04/06/2026)
 
-- Pseudo-elementos y Pseudo-clases
+- Elementos del lenguaje CSS
   - Pseudo-elementos: 
     - `::first-letter`, 
     - `::first-line`,
@@ -187,31 +187,50 @@ Otras etiquetas:
     - `:focus`, 
     - `:nth-child()`, ...
 
-- Variables y funciones CSS
-  - Variables CSS: `--nombre-variable`
-  - Funciones CSS: `calc()`, `var()`, `rgb()`, ...
-  - Paletas de colores
-  - Escala de tamaños para la tipografía
-  - Guias de estilo (Style Guides)
-  - Hojas de CSS básicas
+  - Variables y funciones CSS
+    - Variables CSS: `--nombre-variable`
+    - Funciones CSS: `calc()`, `var()`, `rgb()`, ...
+    - Paletas de colores
+    - Escala de tamaños para la tipografía
+    - Guías de estilo (Style Guides)
+    - Hojas de CSS básicas
 
 [descanso] 11:10 - 11:40
 
-- Unidades de medida en CSS
-  - Absolutas: `px`, `cm`, `mm`, `in`, `pt`, `pc`
-  - Relativas: `%`, `em`, `rem`, `vw`, `vh`, `vmin`, `vmax`
-  - Rem vs Em
+- Elementos del lenguaje CSS (continuación)
+  - Unidades de medida en CSS
+    - Absolutas: `px`, `cm`, `mm`, `in`, `pt`, `pc`
+    - Relativas: `%`, `em`, `rem`, `vw`, `vh`, `vmin`, `vmax`
+    - Rem vs Em
   
 - Diseño (Layout) de páginas web con CSS
   - Box model: contenido, padding, border, margin
+    - Box-sizing: content-box vs border-box
   - Display: block, inline, inline-block, none
+  - Layouts clásicos: float, clear, inline-block
   - Flexbox: diseño flexible para contenedores y elementos hijos
 
 
 ### Dia 5 (Viernes 05/06/2026)
 
-<!-- 
 - Diseño (Layout) de páginas web con CSS
   - Grid: diseño de cuadrícula para organizar elementos en filas y columnas 
-  - Position: static, relative, absolute, fixed
--->
+
+[descanso] 11:00 - 11:30
+
+- Encuesta: <https://forms.cloud.microsoft/pages/responsepage.aspx?id=tA7tEz6_F0GYpeEuIOyC74dmltakDyZNkCB0fAWABS1UMlpRT1VPTUhFVlEwNzY0NkExUldORDZINSQlQCNjPTEkJUAjdD1n&route=shorturl>
+
+- Position: static, relative, absolute, fixed & anchors
+
+- Responsive Web Design (RWD)
+  - Media queries: diseño adaptativo para diferentes tamaños de pantalla
+  - Enfoques de diseño:
+    - Mobile-first
+    - Desktop-first
+    - Mobile-only
+  - Mobile-first design: enfoque de diseño que prioriza la experiencia móvil
+    - Menus hamburguesa
+  - CSS Dinámico
+    - Transformaciones, transiciones y animaciones
+  - Theme selector solo con CSS: has()
+  - Recortes de imágenes: 
