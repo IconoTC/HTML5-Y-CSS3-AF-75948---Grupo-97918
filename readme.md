@@ -233,4 +233,4 @@ Otras etiquetas:
   - CSS Dinámico
     - Transformaciones, transiciones y animaciones
   - Theme selector solo con CSS: has()
-  - Recortes de imágenes: 
+  - Recortes de imágenes: shape-outside
