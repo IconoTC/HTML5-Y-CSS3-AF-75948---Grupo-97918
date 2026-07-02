@@ -1,9 +1,10 @@
 # HTML - CSS
 
-HTML5 Y CSS3 AF 75948 - Grupo 97918
-Fecha inicio: 01/06/2026
-Fecha fin: 05/06/2026
-Horario: 9:00 - 14:00
+- HTML5 Y CSS3 AF 75948 - Grupo 97918
+- Duración: 25 horas
+- Fecha inicio: 01/06/2026
+- Fecha fin: 05/06/2026
+- Horario: 9:00 - 14:00
 
 - Instructor: Alejandro Cerezo Lasne <alce65@hotmail.es>
 - Repositorio: <https://github.com/IconoTC/HTML5-Y-CSS3-AF-75948---Grupo-97918.git>
